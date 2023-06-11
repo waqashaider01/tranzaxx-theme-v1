@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Classimax</title>
+
+    <!-- FAVICON -->
+    <link href="img/favicon.png" rel="shortcut icon" />
+    <!-- PLUGINS CSS STYLE -->
+    <!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css" />
+    <!-- Font Awesome -->
+    <!-- <link
+      href="plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Owl Carousel -->
+    <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link
+      href="plugins/slick-carousel/slick/slick-theme.css"
+      rel="stylesheet"
+    />
+    <!-- Fancy Box -->
+    <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet" />
+    <link
+      href="plugins/jquery-nice-select/css/nice-select.css"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./plugins/bootstrap-tagsinput/src/bootstrap-tagsinput.css">
+
+    <link rel="stylesheet" href="./css/listing.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body class="body-wrapper">
+    <section id="navbar-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light navigation">
+              <a href="index.html">
+                <img src="./images/logo.png" alt="" width="100px" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto main-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-10">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a><a class="text-white">/</a>
+                    <a class="nav-link" href="./register.html">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white add-button" href="./post-add.html"><i class="fa fa-plus-circle"></i> Add
+                      Listing</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="row listing">
+        <div class="col-lg-3">
+            <div class="category-sidenav">
+              <hr>
+              <div class="filters-heading">
+                <b><i class="fas fa-sort-amount-down"></i> &nbsp; Filters</b>
+              </div>
+              <hr>
+              <div class="accordion" id="accordionExample">
+                <div class="accordian-item unstyled1">
+                  <button class="btn d-flex justify-content-between w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Category <i class="fas fa-angle-down"></i>
+                  </button>
+                  <ul id="collapseOne" class="collapse show category-list" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <li><a href="">AutoMobiles</a></li>
+                      <li><a href="">Phones</a></li>
+                      <li><a href="">Tablets</a></li>
+                      <li><a href="">Electornics</a></li>
+                      <li><a href="">AutoMobiles</a></li>
+                      <li><a href="">AutoMobiles</a></li>
+                      <li><a href="">AutoMobiles</a></li>
+                      <li><a href="">AutoMobiles</a></li>
+                      <li><a href="">AutoMobiles</a></li>
+                      <li><a href="">AutoMobiles</a></li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="accordian-item unstyled1">
+                  <button class="btn d-flex justify-content-between w-100" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    Location <i class="fas fa-angle-down"></i>
+                  </button>
+                  <ul id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <input type="password" class="form-control  p-2 border border-info"  id="inputPassword2" placeholder="Search City" style="width: 170px;"> 
+                    <li class="text-muted mt-3">Suggested</li>
+                    <li>
+                      <a href="" class="text-primary">Toronto</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-primary">Toronto</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-primary">Toronto</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-primary">Toronto</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-primary">Toronto</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-primary">Toronto</a>
+                    </li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="accordian-item">
+                  <button class="btn d-flex justify-content-between w-100" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                    Price Range <i class="fas fa-angle-down"></i>
+                  </button>
+                  <div id="collapseThree" class="" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <ul>
+                      <input id="priceRangeSlider" type="text" data-slider-ticks="[0, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0","$400"]'/>
+                      <div class="d-flex justify-content-between mt-3">
+                        <input type="number" class="form-control mr-4" value="$5" placeholder="$0">
+                        <input type="number" class="form-control mr-4" value="$100" placeholder="$400">
+                      </div>
+                      <buton type="button" class="btn btn-outline-primary mt-3 mr-3">Apply</button>
+                      </ul>
+                  </div>
+                </div>
+                <hr>
+                <div class="accordian-item">
+                  <button class="btn d-flex justify-content-between w-100" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                    Date Posted <i class="fas fa-angle-down"></i>
+                  </button>
+                  <ul id="collapseFour" class="collapse show category-list" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          24 hours
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          3 Days
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          7 Days
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          30 Days
+                        </label>
+                      </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 mt-5">
+                <label for="inputPassword2" class="visually-hidden">Password</label>
+              </div>
+            </div>
+            <div class="row gutter-0">
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Looking for something?"> 
+              </div>   
+              <div class="col-lg-2">
+                <button type="submit" class="btn btn-primary w-100"><i class="bi bi-search"></i> Find</button>
+              </div>             
+            </div> 
+            <div class="row mt-4">
+              <div class="col-12">
+                <div class="input-group">
+                  <select class="form-select form-control p-2" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <option selected>All Ads <b></b> <b class="text-warning">(212)</b> </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="category-heading d-flex justify-content-between mt-4">
+              <b>Furniture Ads</b>
+              <a href="" class="btn btn-link">View More</a>
+            </div>
+  
+            <div class="row">
+              <div class="col-lg-4">
+                <!-- product card -->
+                <div class="product-item bg-light">
+                  <div class="card">
+                    <div class="thumb-content">
+                      <!-- <div class="price">$200</div> -->
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (5).png" alt="Card image cap" />
+                        
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets">
+                        <img class="cart-img-logo me-1" src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+                      <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3 " src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ottawa</p>
+                      </div>
+                      <div class="d-flex logoimg">
+                        
+                        <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                        
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-4">
+          
+                <div class="product-item bg-light">
+                  <div class="card ">
+                    <div class="thumb-content">
+                
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                        
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets ">
+                        <img class="cart-img-logo me-1 " src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+            
+                        <h6 class="card-title media-card-heading text-uppercase text-dark  " style="font-size: 17px;" >chairs and seating</h6>
+                  
+                      
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3" src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ontario</p>
+                      </div>
+                      <div class="d-flex logoimg"> 
+                        <img class="cart-img-logo2 " src="assets/offer.png" alt="">
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4">
+          
+                <div class="product-item bg-light">
+                  <div class="card ">
+                    <div class="thumb-content">
+                
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                        <button class=" main-btn  bg-light border border-warning">PREMIUM</button>
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets ">
+                        <img class="cart-img-logo me-1 " src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+            
+                        <h6 class="card-title media-card-heading text-uppercase text-dark  " style="font-size: 17px;" >chairs and seating</h6>
+                  
+                      
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3" src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ontario</p>
+                      </div>
+                      <div class="d-flex logoimg"> 
+                        <img class="cart-img-logo2 " src="assets/offer.png" alt="">
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="category-heading d-flex justify-content-between mt-4">
+              <b>Furniture Ads</b>
+              <a href="" class="btn btn-link">View More</a>
+            </div>
+  
+            <div class="row">
+              <div class="col-lg-4">
+                <!-- product card -->
+                <div class="product-item bg-light">
+                  <div class="card">
+                    <div class="thumb-content">
+                      <!-- <div class="price">$200</div> -->
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (5).png" alt="Card image cap" />
+                        
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets">
+                        <img class="cart-img-logo me-1" src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+                      <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3 " src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ottawa</p>
+                      </div>
+                      <div class="d-flex logoimg">
+                        
+                        <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                        
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-4">
+          
+                <div class="product-item bg-light">
+                  <div class="card ">
+                    <div class="thumb-content">
+                
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                        
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets ">
+                        <img class="cart-img-logo me-1 " src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+            
+                        <h6 class="card-title media-card-heading text-uppercase text-dark  " style="font-size: 17px;" >chairs and seating</h6>
+                  
+                      
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3" src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ontario</p>
+                      </div>
+                      <div class="d-flex logoimg"> 
+                        <img class="cart-img-logo2 " src="assets/offer.png" alt="">
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4">
+          
+                <div class="product-item bg-light">
+                  <div class="card ">
+                    <div class="thumb-content">
+                
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                        <button class=" main-btn  bg-light border border-warning">PREMIUM</button>
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets ">
+                        <img class="cart-img-logo me-1 " src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+            
+                        <h6 class="card-title media-card-heading text-uppercase text-dark  " style="font-size: 17px;" >chairs and seating</h6>
+                  
+                      
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3" src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ontario</p>
+                      </div>
+                      <div class="d-flex logoimg"> 
+                        <img class="cart-img-logo2 " src="assets/offer.png" alt="">
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="category-heading d-flex justify-content-between mt-4">
+              <b>Furniture Ads</b>
+              <a href="" class="btn btn-link">View More</a>
+            </div>
+  
+            <div class="row">
+              <div class="col-lg-4">
+                <!-- product card -->
+                <div class="product-item bg-light">
+                  <div class="card">
+                    <div class="thumb-content">
+                      <!-- <div class="price">$200</div> -->
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (5).png" alt="Card image cap" />
+                        
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets">
+                        <img class="cart-img-logo me-1" src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+                      <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3 " src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ottawa</p>
+                      </div>
+                      <div class="d-flex logoimg">
+                        
+                        <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                        
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-4">
+          
+                <div class="product-item bg-light">
+                  <div class="card ">
+                    <div class="thumb-content">
+                
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                        
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets ">
+                        <img class="cart-img-logo me-1 " src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+            
+                        <h6 class="card-title media-card-heading text-uppercase text-dark  " style="font-size: 17px;" >chairs and seating</h6>
+                  
+                      
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3" src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ontario</p>
+                      </div>
+                      <div class="d-flex logoimg"> 
+                        <img class="cart-img-logo2 " src="assets/offer.png" alt="">
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4">
+          
+                <div class="product-item bg-light">
+                  <div class="card ">
+                    <div class="thumb-content">
+                
+                      <a href="single.html">
+                        <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                        <button class=" main-btn  bg-light border border-warning">PREMIUM</button>
+                        <span class = "bg-white text-dark  "><i class="bi bi-heart-fill"></i></span>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex mb-2 assets ">
+                        <img class="cart-img-logo me-1 " src="assets/1.png" alt="">
+                        <p class="cart-logo-text mt-2 ">Furniture & Appliances</p>
+                      </div>
+            
+                        <h6 class="card-title media-card-heading text-uppercase text-dark  " style="font-size: 17px;" >chairs and seating</h6>
+                  
+                      
+                      <div class="d-flex mt-2 logoimg">
+                        <img class="cart-img-logo3" src="assets/location.png" alt="">
+                        <p class="cart-logo-text2 mx-2">Ontario</p>
+                      </div>
+                      <div class="d-flex logoimg"> 
+                        <img class="cart-img-logo2 " src="assets/offer.png" alt="">
+                        <p class="cart-logo-text3 mx-2 text-info">$5,400</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+  
+<!-- most popular section -->
+
+    <!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer section section-sm">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+        <!-- About -->
+        <div class="block about">
+          <!-- footer logo -->
+          <img src="images/logo.png" alt="" width="120px" />
+          <!-- description -->
+          <p class="alt-color">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 col-md-3">
+        <div class="block">
+          <h5>About Us</h5>
+          <ul>
+            <li><a href="./forgot-password.html">Forgot Password</a></li>
+            <li><a href="./reset-password.html">Reset Password</a></li>
+            <li><a href="./listing.html">Category Listing</a></li>
+            <li><a href="./profile.html">User Profile</a></li>
+            <li><a href="./profile_myads.html">User My Ads</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+        <div class="block">
+          <h5>Contact & SiteMap</h5>
+          <ul>
+            <li><a href="./profile_favads.html">User Favorite</a></li>
+            <li><a href="./profile_pendingapproval.html">User Pending Approvals</a></li>
+            <li><a href="./profile-archievedads.html">User Archieved Ads</a></li>
+            <li><a href="./profile-messages.html">Messages</a></li>
+            <li><a href="./profile-savedsearch.html">User Saved Search</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+        <div class="block">
+          <h5>My Account</h5>
+          <ul>
+            <li><a href="./profile-transactions.html">User Transactions</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Promotion -->
+      <div class="col-lg-3 col-md-7">
+        <div class="block">
+          <h5>Follow Us On</h5>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></i></a>
+            <a href="https://www.google.com/"><i class="fab fa-google-plus-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+</footer>
+    <!-- Footer Bottom -->
+    <footer class="footer-bottom">
+      <!-- Container Start -->
+      <div class="container">
+            <!-- Copyright -->
+            <div class="copyright">
+              <p class="text-center">
+                © 2022 Tranzaxx. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+    <!-- tether js -->
+    <script src="plugins/tether/js/tether.min.js"></script>
+    <script src="plugins/raty/jquery.raty-fa.js"></script>
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./plugins//tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#description', // Replace this CSS selector to match the placeholder element for TinyMCE
+            plugins: 'code table lists',
+            toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
+        });
+        var slider = new Slider('#priceRangeSlider', {});
+    </script>
+    <script src="./plugins/bootstrap-tagsinput/src/bootstrap-tagsinput.js"></script>
+  </body>
+</html>

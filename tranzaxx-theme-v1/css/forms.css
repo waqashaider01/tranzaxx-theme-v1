@@ -1,0 +1,106 @@
+.form {
+  background-color: #fff;
+  box-shadow: -8px 8px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 100px !important;
+  margin-bottom: 30px !important;
+}
+
+.login-form {
+  width: 400px;
+  padding: 20px;
+  margin: auto;
+}
+.forgot-password-form,
+.reset-password-form {
+  padding: 40px 280px;
+  margin: auto;
+}
+.register-form,
+.contact-us-form,
+.post-ad-from {
+  padding: 40px;
+  margin: auto;
+}
+.form .input-group {
+  border: 1px solid #ced4da !important;
+  border-radius: 4px;
+}
+.form .form-control {
+  border: 0px !important;
+}
+.contact-us-form .form-control,
+.post-ad-from .form-control {
+  border: 1px solid #ced4da !important;
+}
+.form .input-group-text {
+  border: 0px !important;
+  border-radius: 0px !important;
+  background-color: #fff;
+  margin: 3px;
+}
+.form label {
+  color: #000 !important;
+}
+.login-form .btn-primary {
+  box-shadow: -10px 10px 30px rgba(0, 174, 240, 0.15) !important;
+  padding: 4px 50px !important;
+  border-radius: 4px !important;
+}
+.forgot-password-form .btn-primary,
+.reset-password-form .btn-primary,
+.register-form .btn-primary,
+.contact-us-form .btn-primary {
+  box-shadow: -10px 10px 30px rgba(0, 174, 240, 0.15) !important;
+  border-radius: 4px !important;
+  width: 220px;
+}
+.forgot-password-form .btn-outline-primary {
+  color: #00aef0 !important;
+  border-color: #00aef0 !important;
+  border-radius: 4px !important;
+  width: 220px;
+}
+.forgot-password-form .btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #00aef0 !important;
+  border-color: #00aef0 !important;
+}
+.form-heading {
+  font-weight: 700;
+}
+.form .conditions-checks {
+  width: 340px;
+  margin: auto;
+}
+.form .title {
+  display: flex;
+  height: 10px;
+  align-items: center;
+}
+.form .file-input-group .input-group-text {
+  margin: 0px !important;
+  color: #fff !important;
+  background-color: #00aef0;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+.form .input-group .form-control {
+  border: 0px !important;
+}
+.form .premiun-ad-card {
+  box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 4px;
+}
+.form .tox-tinymce {
+  border-radius: 4px !important;
+}
+.post-ad-from {
+  margin-top: 20px !important;
+}
+.post-heading {
+  margin-top: 100px;
+  font-weight: 800;
+  text-align: center;
+}

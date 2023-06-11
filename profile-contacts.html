@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classimax</title>
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="shortcut icon" />
+  <!-- PLUGINS CSS STYLE -->
+  <!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
+  <!-- Bootstrap -->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!-- <link
+      href="plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl Carousel -->
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet" />
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet" />
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet" />
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/profile.css">
+  <link href="./css/dashboard.css" rel="stylesheet">
+</head>
+
+<body class="body-wrapper">
+  <section id="navbar-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light navigation">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="" width="100px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto main-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto mt-10">
+                <li class="nav-item">
+                  <a class="nav-link" href="./login.html">Login</a><a class="text-white">/</a>
+                  <a class="nav-link" href="./register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white add-button" href="./post-add.html"><i class="fa fa-plus-circle"></i> Add
+                    Listing</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="profile-header">
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="profile">
+                    <img src="./images/profile/profileog.png" alt="">
+                     <div class="content">
+                       <h6>Muhammad Salman</h6>
+                       <p class="location"><i class="fas fa-map-marker-alt text-warning"></i> Pakistan</p>
+                       <p class="joined"><span>Joined &nbsp;</span> May 17th, 2022 At 11:30</p>
+                     </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <a href="" class="icon-container">
+                    <div class="profile-icon">
+                      <i class="fas fa-paper-plane"></i>
+                      <div class="notification bg-warning">
+                        2
+                      </div>
+                    </div>
+                    <p class="mt-2">Message</p>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="" class="icon-container">
+                    <div class="profile-icon">
+                      <i class="fas fa-file-alt"></i>
+                      <div class="notification">
+                        2
+                      </div>
+                    </div>
+                    <p class="mt-2">Ads</p>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="" class="icon-container">
+                    <div class="profile-icon">
+                      <i class="fas fa-heart"></i>
+                      <div class="notification">
+                        2
+                      </div>
+                    </div>
+                    <p class="mt-2">Favorite</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="profile-content-section">
+        <div class="row">
+          <div class="col-md-3 col-lg-3">
+            <nav id="sidebarMenu" class="d-md-block sidebar collapse">
+              <div class="sidebar-sticky pt-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./profile.html">
+                      <i class="fas fa-home"></i>
+                      Personal Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile_myads.html">
+                      <i class="fas fa-bullhorn"></i>
+                      My Ads
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile_favads.html">
+                      <i class="fas fa-heart"></i>
+                      Favorite Ads
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile-savedsearch.html">
+                      <i class="fas fa-star"></i>
+                      Saved Search
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile_pendingapproval.html">
+                      <i class="fas fa-hourglass-end"></i>
+                      Pending Approval
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile-archievedads.html">
+                      <i class="fas fa-boxes"></i>
+                      Archieved Ads
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile-messages.html">
+                      <i class="fas fa-paper-plane"></i>
+                      Messages
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile-transactions.html">
+                      <i class="fas fa-exchange"></i>
+                      Transactions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                   <hr>
+                  </li>
+                  <li class="nav-item x">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-sign-out"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+        
+              </div>
+            </nav>
+          </div> 
+       
+        
+      <!--Main Content-->
+       
+   <div class="col-md-9 ml-sm-auto col-lg-9">
+            <main role="main" class="main px-md-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h6>Messages (3)</h6>
+              </div>
+            </main>
+            <main role="main" class="main ">
+                <div class="d-flex justify-content-between  mb-3 ">
+                    <div class="">
+                        <button type="button" class="btn messagebut optcolor "><strong>Inbox</strong></button>
+                        <button type="button" class="btn text-dark"><strong>Unread</strong></button>
+                        <button type="button" class="btn text-dark"><strong>Started</strong></button>
+                        <button type="button" class="btn text-dark"><strong>Important</strong></button>
+                    </div>
+                </div>
+              </main>
+            <!--Contact Sidenav-->
+              <div class="card mb-2 " >
+                <div class="row ">
+                  <div class="col-md-4 col-lg-4 ">
+                    <nav id="sidebarMenu" class="d-md-block sidebar-msg collapse">
+                        <div class="sidebar-sticky ">
+                          <ul class="nav flex-column">
+                            <li class="nav-item mt-3 mx-2 text-dark">
+                                 <strong>Contacts</strong> 
+                            </li>
+                            <li>
+                             <hr>
+                            </li>
+                            
+                            <div class='demoScroll sc2'>
+                              <div class='h800'>
+                            <li class="nav-item px-0">
+                                <div class="row text-dark py-0">
+                                <div class="col-md-3 px-3 "> 
+                              <a class="nav-link " href="./profile.html">
+                                <img src="./images/profile/james.png" class="msgscroll" alt="contacts"></a>
+                               </div>
+                               <div class="col-md-9 pt-1 ">
+                                <strong>James</strong>
+                                <p class="text-dark">Hello,  I would like to see more...</p>
+                                <small class="media-logo-text3-msg  mx-3 ">May 17th, 2022 at 13:11</small>
+                               </div>
+                            </div>
+                            </li>
+                            <li class="nav-item">
+                              <hr>
+                            </li>
+                            <li class="nav-item px-0">
+                                <div class="row text-dark py-0">
+                                <div class="col-md-3 px-3 "> 
+                              <a class="nav-link " href="./profile.html">
+                                <img src="./images/profile/nadia.png" class="msgscroll" alt="contacts"></a>
+                               </div>
+                               <div class="col-md-9 pt-1 ">
+                                <strong>Nadia</strong>
+                                <p class="text-dark">Hello,  I would like to see more...</p>
+                                <small class="media-logo-text3-msg  mx-3 ">May 17th, 2022 at 13:11</small>
+                               </div>
+                            </div>
+                            </li>
+                            <li class="nav-item">
+                                <hr>
+                              </li>
+                              <li class="nav-item px-0">
+                                <div class="row text-dark py-0">
+                                <div class="col-md-3 px-3 "> 
+                              <a class="nav-link " href="./profile.html">
+                                <img src="./images/profile/noji.png" class="msgscroll" alt="contacts"></a>
+                               </div>
+                               <div class="col-md-9 pt-1 ">
+                                <strong>Noji</strong>
+                                <p class="text-dark">Hello,  I would like to see more...</p>
+                                <small class="media-logo-text3-msg  mx-3 ">May 17th, 2022 at 13:11</small>
+                               </div>
+                            </div>
+                            </li>
+                            <li class="nav-item">
+                                <hr>
+                              </li>
+                              <li class="nav-item px-0">
+                                <div class="row text-dark py-0">
+                                <div class="col-md-3 px-3 "> 
+                              <a class="nav-link " href="./profile.html">
+                                <img src="./images/profile/rami.png" class="msgscroll" alt="contacts"></a>
+                               </div>
+                               <div class="col-md-9 pt-1 ">
+                                <strong>Rami</strong>
+                                <p class="text-dark">Hello,  I would like to see more...</p>
+                                <small class="media-logo-text3-msg  mx-3 ">May 17th, 2022 at 13:11</small>
+                               </div>
+                            </div>
+                            </li>
+                            <li class="nav-item">
+                                <hr>
+                              </li>
+                              <li class="nav-item px-0">
+                                <div class="row text-dark py-0">
+                                <div class="col-md-3 px-3 "> 
+                              <a class="nav-link " href="./profile.html">
+                                <img src="./images/profile/andro.png" class="msgscroll" alt="contacts"></a>
+                               </div>
+                               <div class="col-md-9 pt-1 ">
+                                <strong>Andro</strong>
+                                <p class="text-dark">Hello,  I would like to see more...</p>
+                                <small class="media-logo-text3-msg  mx-3 ">May 17th, 2022 at 13:11</small>
+                               </div>
+                            </div>
+                            </li>
+                            <li class="nav-item">
+                                <hr>
+                              </li>
+                              </div>
+                              </div>
+                            
+                          </ul>
+                  
+                        </div>
+                      </nav>
+                  </div>
+                  <!--Main Content-->
+                  <div class="col-md-8 col-lg-8">
+                        <div class="py-2 px-4 border-bottom d-none d-md-block">
+                            <div class="d-flex align-items-center py-1">
+                                <div class="flex-grow-1 pl-3"> <strong>James</strong>
+                                    <div class="d-inline"><img src="./images/profile/online.png" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="mr-3">
+                                    <button class="btn btn-light border inboxbtn btn-sm ">
+                                        <i class="fa-solid text-secondary fa-star "></i>
+                                    </button>
+                                    </div>
+                                    <div class="mr-3">
+                                        <button class="btn btn-light border inboxbtn btn-sm ">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mr-3">
+                                            <button class="btn btn-light border inboxbtn btn-sm ">
+                                                <i class="fa-solid text-primary fa-envelope"></i>
+                                            </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="chat-messages p-4">
+                                <div class="pb-4">
+                                    <div class="pb-2"> <img src="./images/profile/james.png" class=" mr-1" alt="Chris Wood" width="40" height="40">
+                                    </div>
+                                    <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
+                                        <div class="font-weight-bold mb-1">James</div> Hello,  I would like to see more photos about your ad because i can’t see all the sides. Thank you</div>   
+                                        <div class="text-muted small text-nowrap mt-2">May 17th, 2022 at 13:11</div>
+                                </div>
+                                
+                                <div class=" pb-4">
+                                    <div class="pb-2"> <img src="./images/profile/profileog.png" class=" mr-1" alt="Sharon Lessman" width="40" height="40">
+                                    </div>
+                                    <div class="flex-shrink-1 bg-light  py-2 px-3 mr-3">
+                                        <div class="font-weight-bold mb-1">Me</div> Yes Sure, Sending some photos soon! </div>
+                                        <div class="text-muted small text-nowrap mt-2">May 17th, 2022 at 13:11</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="flex-grow-0 py-3 px-4 border-top">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Type your message">
+                                <button class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+
+
+        </div>
+        </section>
+        </div>
+  <!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer section section-sm">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+        <!-- About -->
+        <div class="block about">
+          <!-- footer logo -->
+          <img src="images/logo.png" alt="" width="120px" />
+          <!-- description -->
+          <p class="alt-color">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 col-md-3">
+        <div class="block">
+          <h5>About Us</h5>
+          <ul>
+            <li><a href="./forgot-password.html">Forgot Password</a></li>
+            <li><a href="./reset-password.html">Reset Password</a></li>
+            <li><a href="./listing.html">Category Listing</a></li>
+            <li><a href="./profile.html">User Profile</a></li>
+            <li><a href="./profile_myads.html">User My Ads</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+        <div class="block">
+          <h5>Contact & SiteMap</h5>
+          <ul>
+            <li><a href="./profile_favads.html">User Favorite</a></li>
+            <li><a href="./profile_pendingapproval.html">User Pending Approvals</a></li>
+            <li><a href="./profile-archievedads.html">User Archieved Ads</a></li>
+            <li><a href="./profile-messages.html">Messages</a></li>
+            <li><a href="./profile-savedsearch.html">User Saved Search</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+        <div class="block">
+          <h5>My Account</h5>
+          <ul>
+            <li><a href="./profile-transactions.html">User Transactions</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Promotion -->
+      <div class="col-lg-3 col-md-7">
+        <div class="block">
+          <h5>Follow Us On</h5>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></i></a>
+            <a href="https://www.google.com/"><i class="fab fa-google-plus-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+</footer>
+  <!-- Footer Bottom -->
+  <footer class="footer-bottom">
+    <!-- Container Start -->
+    <div class="container">
+          <!-- Copyright -->
+          <div class="copyright">
+            <p class="text-center">
+              © 2022 Tranzaxx. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="plugins/bootstrap/js/popper.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+  <!-- tether js -->
+  <script src="plugins/tether/js/tether.min.js"></script>
+  <script src="plugins/raty/jquery.raty-fa.js"></script>
+  <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+  <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+
+</html>

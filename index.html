@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classimax</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="shortcut icon" />
+  <!-- PLUGINS CSS STYLE -->
+  <!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
+  <!-- Bootstrap -->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css" />
+  <!-- Font Awesome -->
+  <!-- <link
+      href="plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl Carousel -->
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet" />
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet" />
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet" />
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/listing.css">
+</head>
+
+<body class="body-wrapper">
+  <section id="navbar-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light navigation">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="" width="100px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto main-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto mt-10">
+                <li class="nav-item">
+                  <a class="nav-link" href="./login.html">Login</a><a class="text-white">/</a>
+                  <a class="nav-link" href="./register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white add-button" href="./post-add.html"><i class="fa fa-plus-circle"></i> Add
+                    Listing</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===============================
+=            Hero Area            =
+================================-->
+
+  <section class="hero-area bg-1 overly">
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Header Contetnt -->
+          <div class="content-block">
+            <b class="text-white">Simple, Fast and Efficient</b>
+            <h1>SELL AND BUY NEAR YOU</h1>
+          </div>
+          <!-- Advance Search -->
+          <div class="advance-search">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 align-content-center">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <div class="left-inner-addon input-container">
+                          <i class="fas fa-shopping-cart"></i>
+                          <input type="password" class="form-control" placeholder="What?" />
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <div class="left-inner-addon input-container">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <input type="password" class="form-control" placeholder="Where?" />
+                        </div>
+                      </div>
+                      <div class="form-group find-btn-container">
+                        <button type="submit" class="btn btn-primary find-btn">
+                          <i class="fas fa-search"></i>&nbsp; Find
+                        </button>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header p-1">
+                            <img class="categoryLogo" src="assets/1.png" alt="">
+                            <h4>Automobiles</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header p-1">
+                            <img class="categoryLogo" src="assets/2.png" alt="">
+                            <h4>Real Estate</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header p-1">
+                            <img class="categoryLogo" src="assets/3.png" alt="">
+                            <h4>Electronics</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header">
+                            <img class="categoryLogo" src="assets/4.png" alt="">
+                            <h4>Furniture & Appliances</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header">
+                            <img class="categoryLogo" src="assets/5.png" alt="">
+                            <h4>Phones & tablets</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header">
+                            <img class="categoryLogo" src="assets/6.png" alt="">
+                            <h4>Animals & Pets</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header">
+                            <img class="categoryLogo" src="assets/7.png" alt="">
+                            <h4>clothing & fashion</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header">
+                            <img class="categoryLogo" src="assets/8.png" alt="">
+                            <h4>beauty & well being</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header p-1">
+                            <img class="categoryLogo" src="assets/9.png" alt="">
+                            <h4>jobs</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header p-1">
+                            <img class="categoryLogo" src="assets/10.png" alt="">
+                            <h4>services</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1">
+                          <div class="header ">
+                            <img class="categoryLogo" src="assets/11.png" alt="">
+                            <h4>books & learning</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+                        <div class="category-block1 ">
+                          <div class="header p-1">
+                            <img class="categoryLogo" src="assets/12.png" alt="">
+                            <h4>gaming  </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <a href=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container End -->
+  </section>
+
+
+  <!--===========================================
+=             Choose a city or region           =
+============================================-->
+
+
+  <section class="section region-section mapImg">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h4 class="section-Heading mt-4"> Choose a city or region</h4>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2  bg-white ">
+            <div class="header">
+              <h4>Toronto</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Montréal</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Calgary</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Ottawa</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Edmonton</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Mississauga</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <!-- empty col -->
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Winnipeg</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Brampton</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Vancouver</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Québec</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <!-- empty column -->
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Hamilton</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+
+        </div>
+        <div class="col-lg-2 offset-lg-0  col-md-5  offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white  ">
+            <div class="header ">
+              <h4>Surrey</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Halifax</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class="category-block2 bg-white">
+            <div class="header">
+              <h4>Mississauga</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+          <div class=" d-flex justify-content-around">
+            <a class="country-btn" href="#">More cities</a>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+
+  <!--===========================================
+=             Most Popular Ads          =
+============================================-->
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h4 class="section-Heading">Most Popular Ads</h4>
+      </div>
+
+
+      <div class="card mb-2 p-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <!-- <div class="img-fluid rounded-start media-card-main-img" style="
+              background-image: url('media_img/Rectangle 14.png')"></div> -->
+            <img src="media_img/Rectangle 14.png" class="img-fluid rounded-start media-card-main-img"
+              alt="Media Image-1">
+            <span class="camera-icon-bg"><img class="camera-img" src="Assets/camera.png" alt="">
+              <h4 class="camera-no">1</h4>
+            </span>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="mb-3">
+                <img class="media-img-logo" src="assets/1.png" alt="">
+                <p class="media-logo-text">Automobile</p>
+              </div>
+              <h5 class="card-title media-card-heading text-uppercase">Porsche Cayenne S</h5><button type="button"
+                class="btn btn-outline-warning media-card-btn">Premium</button>
+              <div class="mt-1">
+                <img class="media-img-logo2" src="assets/Vector.png" alt="">
+                <p class="media-logo-text2">May 19th, 2022 at 20:44</p>
+                <img class="media-img-logo3" src="assets/location.png" alt="">
+                <p class="media-logo-text2">Laval</p>
+              </div>
+              <div class="mt-2">
+                <img class="media-img-logo2" src="assets/offer.png" alt="">
+                <p class="media-logo-text3">$5,400</p>
+              </div>
+              <img class="save-icon" src="assets/Save 1.png" alt="">
+              <!-- <img class="save-icon" src="assets/share.png" alt=""> -->
+              <img class="share-icon" src="assets/share.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card mb-2 p-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <!-- <div class="img-fluid rounded-start media-card-main-img" style="
+              background-image: url('media_img/Rectangle 14.png')"></div> -->
+            <img src="media_img/Rectangle 10.png" class="img-fluid rounded-start media-card-main-img"
+              alt="Media Image-1">
+            <span class="camera-icon-bg"><img class="camera-img" src="Assets/camera.png" alt="">
+              <h4 class="camera-no">1</h4>
+            </span>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="mb-3">
+                <img class="media-img-logo" src="assets/6.png" alt="">
+                <p class="media-logo-text">Animals & pets</p>
+              </div>
+              <h5 class="card-title media-card-heading text-uppercase">Labrador Retriever good with Kids</h5><button type="button"
+                class="btn btn-outline-warning media-card-btn">Premium</button>
+              <div class="mt-1">
+                <img class="media-img-logo2" src="assets/Vector.png" alt="">
+                <p class="media-logo-text2">May 19th, 2022 at 20:44</p>
+                <img class="media-img-logo3" src="assets/location.png" alt="">
+                <p class="media-logo-text2">Laval</p>
+              </div>
+              <div class="mt-2">
+                <img class="media-img-logo2" src="assets/offer.png" alt="">
+                <p class="media-logo-text3">$200</p>
+              </div>
+              <img class="save-icon" src="assets/Save 1.png" alt="">
+              <!-- <img class="save-icon" src="assets/share.png" alt=""> -->
+              <img class="share-icon" src="assets/share.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card mb-2 p-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <!-- <div class="img-fluid rounded-start media-card-main-img" style="
+              background-image: url('media_img/Rectangle 14.png')"></div> -->
+            <img src="media_img/Rectangle 11.png" class="img-fluid rounded-start media-card-main-img"
+              alt="Media Image-1">
+            <span class="camera-icon-bg"><img class="camera-img" src="Assets/camera.png" alt="">
+              <h4 class="camera-no">1</h4>
+            </span>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="mb-3">
+                <img class="media-img-logo" src="assets/3.png" alt="">
+                <p class="media-logo-text">Electronics</p>
+              </div>
+              <h5 class="card-title media-card-heading">MACBOOKAIR</h5><button type="button"
+                class="btn btn-outline-warning media-card-btn">Premium</button>
+              <div class="mt-1">
+                <img class="media-img-logo2" src="assets/Vector.png" alt="">
+                <p class="media-logo-text2">May 19th, 2022 at 20:44</p>
+                <img class="media-img-logo3" src="assets/location.png" alt="">
+                <p class="media-logo-text2">Laval</p>
+              </div>
+              <div class="mt-2">
+                <img class="media-img-logo2" src="assets/offer.png" alt="">
+                <p class="media-logo-text3">$1,200</p>
+              </div>
+              <img class="save-icon" src="assets/Save 1.png" alt="">
+              <!-- <img class="save-icon" src="assets/share.png" alt=""> -->
+              <img class="share-icon" src="assets/share.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <button type="button" class="btn btn-outline-info">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-4 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text text-center Viewmore">
+         
+          <h1 class="fw-bold mt-4">Premium Ads<small > View More </small> </h1>
+    
+        </div>
+        <div class="col-lg-12 mt-4 prevIcon">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media_img/Rectangle 14.png" class="d-block  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="media_img/Rectangle 14.png" class="d-block  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="media_img/Rectangle 14.png" class="d-block " alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+              <span class="carousel-prev-icon" aria-hidden="true"> <i class="bi bi-arrow-left"></i></span>
+
+              
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+              <span class="carousel-next-icon " aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+          
+              
+            </button>
+          </div>
+        <p class="text-center text-uppercase text-dark mt-4">porsche cayenne s</p>
+        <div class="mt-1 text-center">
+          <img class="media-img-logo2" src="assets/offer.png" alt="">
+          <p class="media-logo-text3">$5,400</p>
+        </div>
+        </div>
+  
+   
+  
+      </div>
+  
+    </div>
+    
+
+  </section>
+
+
+
+
+
+
+  <!--===========================================
+=              =
+============================================-->
+
+
+
+<section>
+<div class="container-fluid horizontal-div mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 logo">
+        <img class="hr-logo" src="assets/Free ads 1.png" alt="">
+        <small class=" mx-4 ">7</small>
+      </div>
+      <div class="col-4 logo">
+        <img class="hr-logo" src="assets/Trusted Sellers 1.png" alt="">
+        <small class=" mx-4 ">4 </small>
+      </div>
+      <div class="col-4 logo">
+        <img class="hr-logo" src="assets/Locations 1.png" alt="">
+        <small class=" mx-4 ">613+ </small> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+  <!--===========================================
+=              Furniture Ads
+============================================-->
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h4 class="section-Heading">Most Popular Ads</h4>
+    </div>
+    <div class="row">
+      <!-- offer 01 -->
+      <div class="col-lg-12">
+        <div class="trending-ads-slide">
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (1).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (2).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (3).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!--===========================================
+=              Phones & Tablets Ads
+============================================-->
+
+
+
+
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <h4 class="section-Heading">Phones & Tablets Ads</h4>
+    </div>
+    <div class="row">
+      <!-- offer 01 -->
+      <div class="col-lg-12">
+        <div class="trending-ads-slide">
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (4).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (5).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (6).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <!-- product card -->
+            <div class="product-item bg-light">
+              <div class="card">
+                <div class="thumb-content">
+                  <!-- <div class="price">$200</div> -->
+                  <a href="single.html">
+                    <img class="card-img-top img-fluid" src="media_img/cart (2).png" alt="Card image cap" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-2">
+                    <img class="cart-img-logo" src="assets/1.png" alt="">
+                    <p class="cart-logo-text">Furniture & Appliances</p>
+                  </div>
+                  <h5 class="card-title media-card-heading text-uppercase">Cabinets</h5>
+                  <div class="d-flex mt-2">
+                    <img class="cart-img-logo3" src="assets/location.png" alt="">
+                    <p class="cart-logo-text2">Laval</p>
+                  </div>
+                  <div class="d-flex">
+                    <img class="cart-img-logo2" src="assets/offer.png" alt="">
+                    <p class="cart-logo-text3">$5,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!--===========================================
+=             yello div
+============================================-->
+
+
+<section class="mt-5 mb-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 hr-yello">
+        <h4 class="text-uppercase hr-yellow-heading mt-4">Register Now</h4>
+        <p class="hr-yellow-text">Build your account and start selling in our platform FREE!</p>
+        <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-info hr-yellow-btn d-flex justify-content-center mb-4">Join Now</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+
+
+
+  <!--============================
+=            Footer            =
+=============================-->
+
+  <footer class="footer section section-sm">
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+          <!-- About -->
+          <div class="block about">
+            <!-- footer logo -->
+            <img src="images/logo.png" alt="" width="120px" />
+            <!-- description -->
+            <p class="alt-color">
+              It's very easy to place an ad: click on the button "Post free Ads" above right.
+            </p>
+          </div>
+        </div>
+        <!-- Link list -->
+        <div class="col-lg-2 col-md-3">
+          <div class="block">
+            <h5>About Us</h5>
+            <ul>
+              <li><a href="./forgot-password.html">FAQ</a></li>
+              <li><a href="./reset-password.html">Anti-Scam</a></li>
+              <li><a href="./listing.html">Terms</a></li>
+              <li><a href="./profile.html">Privacy</a></li>
+             
+            </ul>
+          </div>
+        </div>
+        <!-- Link list -->
+        <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+          <div class="block">
+            <h5>Contact & SiteMap</h5>
+            <ul>
+              <li><a href="./profile_favads.html">Contact Us</a></li>
+              <li><a href="./profile_pendingapproval.html">Sitemap</a></li>
+           
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+          <div class="block">
+            <h5>My Account</h5>
+            <ul>
+              <li><a href="./profile-transactions.html">Log In</a></li>
+              <li><a href="./index.html">Register</a></li>
+           
+            </ul>
+          </div>
+        </div>
+        <!-- Promotion -->
+        <div class="col-lg-3 col-md-7">
+          <div class="block">
+            <h5>Follow Us On</h5>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></i></a>
+              <a href="https://www.google.com/"><i class="fab fa-google-plus-square"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container End -->
+  </footer>
+  <!-- Footer Bottom -->
+  <footer class="footer-bottom">
+    <!-- Container Start -->
+    <div class="container">
+          <!-- Copyright -->
+          <div class="copyright">
+            <p class="text-center">
+              © 2022 Tranzaxx. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="plugins/bootstrap/js/popper.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+  <!-- tether js -->
+  <script src="plugins/tether/js/tether.min.js"></script>
+  <script src="plugins/raty/jquery.raty-fa.js"></script>
+  <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+  <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

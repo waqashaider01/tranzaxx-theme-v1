@@ -1,0 +1,61 @@
+#navbar-section {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  background: #00aef0;
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.add-button {
+  background-color: #ffd300;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navigation {
+  padding: 8px 0 !important;
+}
+footer {
+  box-shadow: -8px 8px 18px rgba(0, 0, 0, 0.1);
+}
+footer .social-icons a {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #00aef0;
+  border-radius: 50%;
+  color: #00aef0;
+  margin-right: 5px;
+}
+.hero-area .content-block {
+  padding-top: 150px !important;
+  padding-bottom: 0px !important;
+}
+.input-container {
+  padding-bottom: 1em;
+}
+.left-inner-addon {
+  position: relative;
+}
+.left-inner-addon input {
+  padding-left: 35px !important;
+}
+.left-inner-addon i {
+  position: absolute;
+  padding: 12px 12px;
+  pointer-events: none;
+  color: #00aef0;
+}
+.find-btn-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.find-btn {
+  padding: 6px 40px !important;
+}
+.advance-search .form-control {
+  padding: 10px 35px !important;
+}
